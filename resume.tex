@@ -1,0 +1,217 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Friggeri Resume/CV
+% XeLaTeX Template
+% Version 1.2 (3/5/15)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX and the bibliography, if used,
+% needs to be compiled with biber rather than bibtex.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
+
+\begin{document}
+
+\header{Rick}{Sullivan}{technology architecture analyst} % Your name and current job title/field
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{aside} % In the aside, each new line forces a line break
+\section{contact}
+19 Clementina St.
+Unit 306
+San Francisco, CA 94105
+~
++1 (503) 867 6118
+~
+\href{mailto:rick@ricksullivan.net}{rick@ricksullivan.net}
+\href{http://www.ricksullivan.net}{http://www.ricksullivan.net}
+\href{http://github.com/rsullivan00}{GitHub://rsullivan00}
+%
+\section{languages}
+{\color{red} $\varheartsuit$} Python
+JavaScript, Java, C++
+CSS3 \& HTML5
+%
+\section{technologies}
+Django, React, jQuery
+Git, SCSS, LaTeX
+Ubuntu, Unix, Windows
+\end{aside}
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{education}
+
+\begin{entrylist}
+
+%------------------------------------------------
+\entry
+{2011--2015}
+{Bachelor of Science {\normalfont in Computer Science \& Engineering}}
+{Santa Clara University}
+{GPA: 3.876 -- \emph{magna cum laude}}
+
+
+%------------------------------------------------
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{experience}
+
+\begin{entrylist}
+
+%------------------------------------------------
+%\newcommand{\mydot}{$\cdot$}
+ 
+\entry
+{2015 -- Now}
+{Accenture Technology}
+{San Francisco, California}
+{\emph{Technology Architecture Analyst} \\
+Designed and implemented a Jenkins solution for automating application deployment, accounting for easy configuration and extensibility. Triaged and resolved defects in configuration, build processes, and Java applications.\\
+Jenkins \mydot Bash \mydot PowerShell \mydot Java \mydot SQL Developer \mydot Virtual Machines}
+%Detailed achievements:
+%\begin{itemize}
+%	\item Designed and implemented new Jenkins automation solution
+%	\begin{itemize}
+%		\item Developed Bash and PowerShell scripts to incorporate domain knowledge into the deployment system
+%		\item Improved existing scripts to allow for more flexible use in future releases
+%		\item Technologies used: Jenkins, Bash, PowerShell, Batch, Oracle
+%	\end{itemize}
+%\end{itemize}}
+
+
+\entry
+{Summer 2014}
+{Accenture Technology}
+{San Jose, California}
+{\emph{Business \& System Integration Analyst} \\
+Contributed to a MEAN stack crowdsourcing application (MongoDB, ExpressJS, AngularJS, NodeJS), following Agile processes. Designed and created SharePoint onboarding website for new project roll-ons.\\
+AngularJS \mydot NodeJS \mydot ExpressJS \mydot MongoDB \mydot SharePoint \mydot Visio}
+%Detailed achievements:
+%\begin{itemize}
+%	\item Contributed to MEAN stack crowdsourcing application (MongoDB, ExpressJS, AngularJS, NodeJS)
+%	\begin{itemize}
+%		\item Participated in Agile development
+%	\end{itemize}
+%
+%	\item Created SharePoint onboarding website for new project roll-ons
+%		\begin{itemize}
+%			\item Gathered necessary information from teams across the client
+%			\item Designed and developed site, focusing on ease of use
+%		\end{itemize}
+%
+%	\item Documented physical architecture of a large-scale application
+%\end{itemize}}
+
+\entry
+{Summer 2013}
+{InComm Digital}
+{Portland, Oregon}
+{\emph{Software Engineer Intern} \\
+Created a dynamic API documentation website. Developed sample applications on top of API endpoints, including code examples for developers. Learned and participated in Agile development.\\
+jQuery \mydot SCSS \mydot C\# \& .NET \mydot SQL Server \mydot Bootstrap \mydot Agile}
+%Detailed achievements:
+%\begin{itemize}
+%	\item Created documentation website for a new web API for creating and managing gift cards
+%	\begin{itemize}
+%		\item Used jQuery, ASP.NET, and SCSS for developing and designing the site.
+%		\item Learned and participated in Agile development
+%	\end{itemize}
+%
+%	\item Created sample applications on top of API endpoints
+%		\begin{itemize}
+%			\item Made sample webpages to show capabilities of the API, including code examples
+%		\end{itemize}
+%\end{itemize}}
+
+%------------------------------------------------
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{projects}
+
+\begin{entrylist}
+
+%------------------------------------------------
+\entry
+{2015}
+{FoodReader}
+{\href{https://github.com/Rsullivan00/labelRecognizer}{github.com/Rsullivan00/labelRecognizer}}
+{Computer-vision project that extracts nutritional data from images of USDA food labels. Won best-in-session at my senior design conference.}
+
+\entry
+{2015}
+{SCU Transcript}
+{\href{http://www.scutranscript.com}{www.scutranscript.com}}
+{Lexes and parses transcript text to an intermediate format. Can produce a perfectly-formatted LaTeX PDF file or organized JSON containing the transcript info.}
+
+%------------------------------------------------
+
+\end{entrylist}
+
+
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{awards}
+
+\begin{entrylist}
+
+%------------------------------------------------
+\entry
+{2015}
+{Senior Design Session Winner}
+{Bannan School of Engineering, Santa Clara University}
+{Awarded for best capstone project in session, by a panel of industry judges.}
+
+\entry
+{2011-2015}
+{University Honors College}
+{Santa Clara University}
+{Member of the Santa Clara Honors College.}
+
+\entry
+{2011--2015}
+{Provost Scholar}
+{Bannan School of Engineering, Santa Clara University}
+{Half-tuition scholarship for four years.}
+
+%------------------------------------------------
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{interests}
+
+\textbf{professional:} web app creation, quick prototyping, computer vision, natural language processing \textbf{personal:} music, cooking, bouldering, lifting, craft beer 
+%----------------------------------------------------------------------------------------
+\end{document}
