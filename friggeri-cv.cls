@@ -75,9 +75,9 @@
 
 \newcommand{\header}[3]{%
   \begin{tikzpicture}[remember picture,overlay]
-    \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=4cm] (box) at (current page.north){};
+    \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=3.8cm] (box) at (current page.north){};
     \node [anchor=center] (name) at (box) {%
-      \fontsize{40pt}{72pt}\color{header}%
+      \fontsize{36pt}{64pt}\color{header}%
       {\thinfont #1}{\bodyfont  #2}
     };
     \node [anchor=north] at (name.south) {%
@@ -85,8 +85,7 @@
       \thinfont #3%
     };
   \end{tikzpicture}
-  \vspace{2.5cm}
-  \vspace{-2\parskip}
+  \vspace{2.0cm}
 }
 
 
@@ -113,12 +112,12 @@
 }
 
 \renewcommand{\section}[1]{
-  \par\vspace{\parskip}
+  \par\vspace{.5\parskip}
   {%
     \LARGE\headingfont\color{headercolor}%
     \@sectioncolor #1%
   }
-  \par\vspace{\parskip}
+  %\par\vspace{.25\parskip}
 }
 
 \renewcommand{\subsection}[1]{
@@ -168,7 +167,7 @@
   \renewcommand{\section}[1]{
     \par\vspace{\baselineskip}{\Large\headingfont\color{headercolor} ##1}
   }
-  \begin{textblock}{3.6}(1.5, 4.33)
+  \begin{textblock}{3.9}(1.5, 3.97)
   \begin{flushright}
   \obeycr
 }{%
@@ -182,7 +181,7 @@
 % Bibliography %
 %%%%%%%%%%%%%%%%
 
-\RequirePackage[style=verbose, maxnames=99, sorting=ydnt]{biblatex}
+\RequirePackage[style=verbose, maxnames=99, sorting=ydnt, backend=biber]{biblatex}
 
 \DeclareFieldFormat[article]{title}{#1\par}
 \DeclareFieldFormat[book]{title}{#1\par}
@@ -316,7 +315,7 @@
 % Other tweaks %
 %%%%%%%%%%%%%%%%
 
-\RequirePackage[left=6.1cm,top=2cm,right=1.5cm,bottom=1.5cm,nohead,nofoot]{geometry}
+\RequirePackage[left=6.1cm,top=1.8cm,right=1.5cm,bottom=1.5cm,nohead,nofoot]{geometry}
 \RequirePackage{hyperref}
 \hypersetup{
     colorlinks=false,       
