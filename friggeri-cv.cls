@@ -147,7 +147,7 @@
 }
 \renewcommand{\bfseries}{\headingfont\color{headercolor}}
 \newcommand{\entry}[4]{%
-  #1&\parbox[t]{11.8cm}{%
+  #1&\parbox[t]{12.5cm}{%
     \textbf{#2}%
     \hfill%
     {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
@@ -167,7 +167,7 @@
   \renewcommand{\section}[1]{
     \par\vspace{\baselineskip}{\Large\headingfont\color{headercolor} ##1}
   }
-  \begin{textblock}{3.0}(1.5, 3.97)
+  \begin{textblock}{3.4}(1.5, 3.97)
   \begin{flushright}
   \obeycr
 }{%
@@ -315,7 +315,7 @@
 % Other tweaks %
 %%%%%%%%%%%%%%%%
 
-\RequirePackage[left=5.1cm,top=1.8cm,right=1.5cm,bottom=1.5cm,nohead,nofoot]{geometry}
+\RequirePackage[left=5.5cm,top=1.8cm,right=1.5cm,bottom=1.5cm,nohead,nofoot]{geometry}
 \RequirePackage{hyperref}
 \hypersetup{
     colorlinks=false,
